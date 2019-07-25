@@ -10,6 +10,7 @@ https://github.com/ksbunk/dbhcms/releases/tag/dbhcms-1.2.0
 windows 10 + php 5.4.31 + Apache2.2 + DBHcms v1.2.0
 ```
 
+
 ## Descriptions
 
 ```
@@ -56,7 +57,7 @@ DBHcms v1.2.0 has an unauthorized operation vulnerability cause There's no acces
 DBHcms v1.2.0 has a Arbitrary file write vulnerability cause in dbhcms\mod\mod.editor.php $_POST['updatefile'] is filename and $_POST['tinymce_content'] is file content,and there has no filter function for security, you can write any filename with any content. A remote authenticated with admin user can exploit this vulnerability to get a webshell.
 
 [15]
-DBHcms v1.2.0 has an unauthorized operation vulnerability cause in dbhcms\mod\mod.editor.php $_GET['file'] is filename,and there has no filter function for security, you can read any file's content. A remote authenticated with admin user can exploit this vulnerability to read all web source code.
+DBHcms v1.2.0 has an Arbitrary file read vulnerability cause in dbhcms\mod\mod.editor.php $_GET['file'] is filename,and there has no filter function for security, you can read any file's content. A remote authenticated with admin user can exploit this vulnerability to read all web source code.
 
 ```
 
